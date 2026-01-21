@@ -250,6 +250,9 @@ h4 { font-size: 1.25rem; }
     display: flex;
     gap: var(--space-md);
     align-items: center;
+   border-radius: 12px;     /* ← закругление */
+  overflow: hidden;        /* ← чтобы внутренние элементы не "вылезали" */
+  margin-bottom: 1rem;     /* опционально — отступ от следующего блока */
 }
 
 .nav-link {
@@ -347,8 +350,8 @@ h4 { font-size: 1.25rem; }
 .main-nav {
     background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
     position: relative;
-    border-radius: 12px; /* ← закругление */
-    overflow: hidden;     /* ← обязательно! */
+    /* border-radius: 12px; /* ← закругление */
+    /* overflow: hidden;     /* ← обязательно! */
 }
 
 .nav-menu {
