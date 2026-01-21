@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonsalus OÜ | Maritime Telecom Services</title>
+    <meta name="description" content="Modern maritime communication, navigation and GMDSS solutions">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="ee">EE</button>
+                </div>
+                
+                <!-- Top Navigation -->
+                <nav class="top-nav">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="pages/news.html" class="nav-link"><i class="far fa-newspaper"></i> News</a>
+                    <a href="pages/about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="pages/contact.html" class="nav-link"><i class="fas fa-map-marker-alt"></i> Contact</a>
+                    <a href="pages/support.html" class="nav-link"><i class="fas fa-question-circle"></i> Support</a>
+                    <button class="btn-login" id="loginBtn"><i class="fas fa-user"></i> Client Login</button>
+                </nav>
+            </div>
+            
+            <!-- Main Navigation -->
+            <div class="header-main">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-placeholder">
+                        <span class="logo-text">FONSALUS</span>
+                        <span class="logo-subtitle">Maritime Telecom</span>
+                    </div>
+                    <div class="logo-hint">← Your logo here</div>
+                </div>
+                
+                <!-- Search -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search services, equipment, documents..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation Menu -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/radio-accounting.html" class="nav-link">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Radio Accounting
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/radio-accounting/administrations.html">Administrations List</a>
+                            <a href="pages/services/radio-accounting/ships.html">Ships Registry</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/billing.html" class="nav-link">
+                            <i class="fas fa-receipt"></i>
+                            Radio Billing
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/billing/vhf-service.html">VHF DSC Services</a>
+                            <a href="pages/services/billing/coverage.html">Coverage Maps</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/satellite.html" class="nav-link">
+                            <i class="fas fa-satellite"></i>
+                            Satellite Services
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/satellite/inmarsat.html">Inmarsat Solutions</a>
+                            <a href="pages/services/satellite/c-mail.html">C-Mail Service</a>
+                            <a href="pages/services/satellite/coverage-maps.html">Coverage Maps</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/gmdss.html" class="nav-link">
+                            <i class="fas fa-broadcast-tower"></i>
+                            GMDSS Equipment
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/gmdss/thrane.html">Thrane & Thrane</a>
+                            <a href="pages/services/gmdss/jotron.html">Jotron AS</a>
+                            <a href="pages/services/gmdss/sbm.html">SBM Systems</a>
+                            <a href="pages/services/gmdss/sea-areas.html">GMDSS Areas</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/navigation.html" class="nav-link">
+                            <i class="fas fa-compass"></i>
+                            Navigation
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/navigation/sperry.html">Sperry Marine</a>
+                            <a href="pages/services/navigation/danelec.html">Danelec</a>
+                            <a href="pages/services/navigation/vdr-survey.html">VDR Survey</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="pages/services/survey.html" class="nav-link">
+                            <i class="fas fa-clipboard-check"></i>
+                            Radio Survey
+                        </a>
+                        <div class="dropdown">
+                            <a href="pages/services/survey/certificates.html">Certificates</a>
+                            <a href="pages/services/survey/survey-list.html">Survey Schedule</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="pages/services/charts.html" class="nav-link">
+                            <i class="fas fa-map"></i>
+                            E-Navigation Charts
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1 class="slide-title">30 Years in Maritime Telecom Services</h1>
+                    <p class="slide-subtitle">Reliable communication solutions for global shipping</p>
+                    <a href="pages/about.html" class="btn btn-primary">Discover Our Story</a>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <h1 class="slide-title">GMDSS & Navigation Systems</h1>
+                    <p class="slide-subtitle">Complete solutions from leading manufacturers</p>
+                    <a href="pages/services/gmdss.html" class="btn btn-primary">Browse Equipment</a>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <h1 class="slide-title">Global Satellite Coverage</h1>
+                    <p class="slide-subtitle">Inmarsat services with worldwide support</p>
+                    <a href="pages/services/satellite.html" class="btn btn-primary">View Coverage Maps</a>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive maritime communication and navigation solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="service-title">Satellite Communications</h3>
+                    <p class="service-description">Inmarsat, VSAT, and C-Mail services with global coverage and 24/7 support.</p>
+                    <a href="pages/services/satellite.html" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3 class="service-title">GMDSS Equipment</h3>
+                    <p class="service-description">Sales, installation, and maintenance of Thrane & Thrane, Jotron systems.</p>
+                    <a href="pages/services/gmdss.html" class="service-link">View products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="service-title">Radio Accounting</h3>
+                    <p class="service-description">Ship registry management and international administration compliance.</p>
+                    <a href="pages/services/radio-accounting.html" class="service-link">See details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="service-title">Certification & Survey</h3>
+                    <p class="service-description">Radio surveys, GMDSS inspections, and certification services.</p>
+                    <a href="pages/services/survey.html" class="service-link">Get certified <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Equipment -->
+    <section class="featured-equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Equipment</h2>
+                <p class="section-subtitle">Latest solutions from our partners</p>
+            </div>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-satellite"></i>
+                            <span>Equipment Image</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h3 class="equipment-title">SAILOR 6300 MF/HF Radio</h3>
+                        <p class="equipment-description">GMDSS-approved system with advanced DSC functionality for Sea Area 2+ operations.</p>
+                        <div class="equipment-meta">
+                            <span class="brand">Thrane & Thrane</span>
+                            <span class="category">MF/HF Communications</span>
+                        </div>
+                        <a href="pages/equipment/sailor-6300.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-compass"></i>
+                            <span>Equipment Image</span>
+                        </div>
+                    </div>
+                    <div class="equipment-content">
+                        <h3 class="equipment-title">NAVIGAT X MK1 Gyrocompass</h3>
+                        <p class="equipment-description">Digital marine gyrocompass with unparalleled accuracy and reliability.</p>
+                        <div class="equipment-meta">
+                            <span class="brand">Sperry Marine</span>
+                            <span class="category">Navigation Systems</span>
+                        </div>
+                        <a href="pages/equipment/navigat-x.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Updates</h2>
+                <p class="section-subtitle">Industry news and company announcements</p>
+                <a href="pages/news.html" class="view-all">View All News <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">15</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">New GMDSS Regulations Update</h3>
+                        <p class="news-excerpt">Important changes to SOLAS Chapter IV affecting satellite communication requirements.</p>
+                        <a href="pages/news/gmdss-update-2026.html" class="news-link">Read more</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">10</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">New Partnership with Danelec</h3>
+                        <p class="news-excerpt">We are now authorized distributors of Danelec VDR and navigation systems.</p>
+                        <a href="pages/news/danelec-partnership.html" class="news-link">Read more</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">05</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">Inmarsat Fleet Safety Webinar</h3>
+                        <p class="news-excerpt">Join our free webinar on optimizing satellite communication for fleet safety.</p>
+                        <a href="pages/news/webinar-january.html" class="news-link">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Portal CTA -->
+    <section class="client-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Client Portal</h2>
+                    <p class="cta-description">Access your ship registry, invoices, certificates, and support tickets online.</p>
+                </div>
+                <div class="cta-actions">
+                    <button class="btn btn-secondary" id="ctaLoginBtn">
+                        <i class="fas fa-sign-in-alt"></i> Login to Portal
+                    </button>
+                    <a href="pages/clients/register.html" class="btn btn-outline-light">
+                        <i class="fas fa-user-plus"></i> Register Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">FONSALUS</span>
+                        <span class="logo-subtitle">Maritime Telecom Services</span>
+                    </div>
+                    <p class="footer-description">
+                        Providing reliable maritime communication, navigation, and GMDSS solutions since 1994.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Company</a></li>
+                        <li><a href="pages/services.html">All Services</a></li>
+                        <li><a href="pages/equipment.html">Equipment Catalog</a></li>
+                        <li><a href="pages/news.html">News & Updates</a></li>
+                        <li><a href="pages/contact.html">Contact Information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/services/radio-accounting.html">Radio Accounting</a></li>
+                        <li><a href="pages/services/satellite.html">Satellite Services</a></li>
+                        <li><a href="pages/services/gmdss.html">GMDSS Equipment</a></li>
+                        <li><a href="pages/services/survey.html">Certification & Survey</a></li>
+                        <li><a href="pages/services/navigation.html">Navigation Systems</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Maritime District 24, 13619 Tallinn, Estonia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+372 6707 6360</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@fonsalus.ee</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00-18:00 EET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="pages/legal/terms.html">Terms of Use</a>
+                    <span class="separator">|</span>
+                    <a href="pages/legal/privacy.html">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="pages/legal/sitemap.html">Site Map</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Fonsalus OÜ. All rights reserved.</p>
+                    <p class="dev-credit">Website concept by [Your Name]</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title">Client Portal Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Username / Email</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="pages/clients/forgot-password.html" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="pages/clients/register.html">Register here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
