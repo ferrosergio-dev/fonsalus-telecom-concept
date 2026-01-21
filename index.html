@@ -183,6 +183,10 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
+
+        <!-- Wave divider at bottom -->
+        <div class="hero-wave"></div>
+            
             <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
@@ -441,10 +445,10 @@
         </div>
     </footer>
 
-    <!-- Login Modal -->
+ <!-- Login Modal -->
     <div class="modal" id="loginModal">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">&times;</button>
+             <button class="modal-close" id="modalClose">&times;</button>
             <h2 class="modal-title">Client Portal Login</h2>
             <form class="login-form">
                 <div class="form-group">
@@ -465,11 +469,29 @@
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
                 <div class="form-footer">
                     <p>Don't have an account? <a href="pages/clients/register.html">Register here</a></p>
-                </div>
-            </form>
         </div>
     </div>
 
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Visual Enhancement Elements -->
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+    <div class="decorative-circle circle-3"></div>
+
+    <!-- SVG Definitions (hidden) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <!-- Wave pattern for section dividers -->
+            <path id="wave-divider" d="M0,0 C150,100 350,0 500,100 S750,0 1000,100 V200 H0 Z"/>
+            
+            <!-- Circle pattern for backgrounds -->
+            <pattern id="circle-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="20" cy="20" r="2" fill="rgba(26, 95, 156, 0.1)"/>
+            </pattern>
+        </defs>
+    </svg>
+
 </body>
 </html>
