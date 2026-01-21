@@ -363,6 +363,7 @@ h4 { font-size: 1.25rem; }
 .nav-item > .nav-link {
     color: var(--color-white);
     padding: 1rem 1.5rem;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -374,6 +375,7 @@ h4 { font-size: 1.25rem; }
 
 .nav-item > .nav-link:hover {
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 .nav-item.has-dropdown:hover .dropdown {
