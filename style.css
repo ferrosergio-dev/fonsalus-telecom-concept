@@ -427,11 +427,13 @@ h4 { font-size: 1.25rem; }
 
 /* 6. HERO SECTION - БАЗОВЫЕ СТИЛИ */
 .hero {
-    position: relative;
+    /*position: relative;
     height: 600px;
     overflow: hidden;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-xl);*/
     border-radius: 24px 24px 0 0; /* ← Закругление углов */
+    overflow: hidden;
+    position: relative;
 }
 
 .hero-slider {
