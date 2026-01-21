@@ -1502,11 +1502,11 @@ h4 { font-size: 1.25rem; }
         <!-- Picture элемент для современных браузеров -->
         <picture>
             <!-- WebP для браузеров, которые его поддерживают -->
-            <source srcset="assets/images/logo.webp" type="image/webp">
+            <source srcset="assets/images/final/logo.webp" type="image/webp">
             <!-- PNG как fallback -->
-            <source srcset="assets/images/logo.png" type="image/png">
+            <source srcset="assets/images/final/logo.png" type="image/png">
             <!-- Основное изображение -->
-            <img src="assets/images/logo.png" 
+            <img src="assets/images/final/logo.png" 
                  alt="Fonsalus OÜ - Maritime Telecom Services"
                  class="logo-image"
                  width="200"
