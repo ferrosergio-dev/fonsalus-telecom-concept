@@ -431,6 +431,7 @@ h4 { font-size: 1.25rem; }
     height: 600px;
     overflow: hidden;
     margin-bottom: var(--space-xl);
+    border-radius: 24px; /* ← Закругление углов */
 }
 
 .hero-slider {
