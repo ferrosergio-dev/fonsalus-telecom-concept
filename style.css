@@ -247,12 +247,13 @@ h4 { font-size: 1.25rem; }
 }
 
 .top-nav {
-    display: flex;
-    gap: var(--space-md);
-    align-items: center;
-   border-radius: 12px;     /* ← закругление */
-  overflow: hidden;        /* ← чтобы внутренние элементы не "вылезали" */
-  margin-bottom: 1rem;     /* опционально — отступ от следующего блока */
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;     /* или любое значение, например 16px */
+  overflow: hidden;        /* обязательно! */
 }
 
 .nav-link {
