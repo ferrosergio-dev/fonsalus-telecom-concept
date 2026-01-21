@@ -391,7 +391,8 @@ h4 { font-size: 1.25rem; }
     background: var(--color-white);
     min-width: 220px;
     box-shadow: var(--shadow-xl);
-    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    /*border-radius: 0 0 var(--radius-md) var(--radius-md); */
+    border-radius: 10px; /* <-- Добавлено */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
