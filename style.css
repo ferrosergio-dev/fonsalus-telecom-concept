@@ -200,11 +200,14 @@ h4 { font-size: 1.25rem; }
 
 /* 5. HEADER & NAVIGATION - БАЗОВЫЕ СТИЛИ */
 .header {
-    background: var(--color-white);
+background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark)); /* ← Это ваш темно-синий градиент */
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-radius: 12px;     /* ← Закругление */
+    overflow: hidden;        /* ← Обязательно! Чтобы внутренние элементы не "вылезали" */
+    padding: 0.5rem 1rem;    /* ← Опционально: отступы, чтобы контент не прилипал к краям */
 }
 
 .header-top {
