@@ -205,21 +205,24 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-radius: 12px;     /* ← Закругление */
-    overflow: hidden;        /* ← Обязательно! Чтобы внутренние элементы не "вылезали" */
-    padding: 0.5rem 1rem;    /* ← Опционально: отступы, чтобы контент не прилипал к краям */
 }
 
 .header-top {
     background: var(--color-dark);
     padding: 0.5rem 0;
     color: var(--color-white);
+    border-radius: 12px;     /* ← Закругление */
+    overflow: hidden;        /* ← Обязательно! Чтобы внутренние элементы не "вылезали" */
+    padding: 0.5rem 1rem;    /* ← Опционально: отступы, чтобы контент не прилипал к краям */
 }
 
 .header-top .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 12px;     /* ← Закругление */
+    overflow: hidden;        /* ← Обязательно! Чтобы внутренние элементы не "вылезали" */
+    padding: 0.5rem 1rem;    /* ← Опционально: отступы, чтобы контент не прилипал к краям */
 }
 
 .language-switcher {
