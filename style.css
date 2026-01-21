@@ -347,6 +347,8 @@ h4 { font-size: 1.25rem; }
 .main-nav {
     background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
     position: relative;
+    border-radius: 12px; /* ← закругление */
+    overflow: hidden;     /* ← обязательно! */
 }
 
 .nav-menu {
