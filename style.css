@@ -1159,7 +1159,7 @@ h4 { font-size: 1.25rem; }
 
 /* 3. УЛУЧШЕННЫЙ HERO С ВОЛНОЙ */
 .hero {
-    border-radius: 0 0 40px 40px;
+    border-radius: 24px 24px 24px 24px;
     overflow: hidden;
     position: relative;
 }
