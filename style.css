@@ -200,7 +200,7 @@ h4 { font-size: 1.25rem; }
 
 /* 5. HEADER & NAVIGATION - БАЗОВЫЕ СТИЛИ */
 .header {
-background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark)); /* ← Это ваш темно-синий градиент */
+    background: var(--color-white);
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
@@ -220,9 +220,6 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 12px;     /* ← Закругление */
-    overflow: hidden;        /* ← Обязательно! Чтобы внутренние элементы не "вылезали" */
-    padding: 0.5rem 1rem;    /* ← Опционально: отступы, чтобы контент не прилипал к краям */
 }
 
 .language-switcher {
@@ -253,13 +250,9 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
 }
 
 .top-nav {
-  display: flex;
-  gap: var(--space-md);
-  align-items: center;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
-  padding: 0.75rem 1.5rem;
-  border-radius: 12px;     /* или любое значение, например 16px */
-  overflow: hidden;        /* обязательно! */
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
 }
 
 .nav-link {
@@ -357,8 +350,6 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
 .main-nav {
     background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
     position: relative;
-    /* border-radius: 12px; /* ← закругление */
-    /* overflow: hidden;     /* ← обязательно! */
 }
 
 .nav-menu {
@@ -375,7 +366,6 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
 .nav-item > .nav-link {
     color: var(--color-white);
     padding: 1rem 1.5rem;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -387,7 +377,6 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
 
 .nav-item > .nav-link:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
 }
 
 .nav-item.has-dropdown:hover .dropdown {
@@ -403,8 +392,7 @@ background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dar
     background: var(--color-white);
     min-width: 220px;
     box-shadow: var(--shadow-xl);
-    /*border-radius: 0 0 var(--radius-md) var(--radius-md); */
-    border-radius: 10px; /* <-- Добавлено */
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
