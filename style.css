@@ -1493,6 +1493,38 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ============================================
+   LOGO STYLES
+   ============================================ */
+
+<!-- Logo с оптимизацией -->
+<div class="logo">
+    <a href="index.html" class="logo-link">
+        <!-- Picture элемент для современных браузеров -->
+        <picture>
+            <!-- WebP для браузеров, которые его поддерживают -->
+            <source srcset="assets/images/logo.webp" type="image/webp">
+            <!-- PNG как fallback -->
+            <source srcset="assets/images/logo.png" type="image/png">
+            <!-- Основное изображение -->
+            <img src="assets/images/logo.png" 
+                 alt="Fonsalus OÜ - Maritime Telecom Services"
+                 class="logo-image"
+                 width="200"
+                 height="60"
+                 loading="lazy">
+        </picture>
+        
+        <!-- Fallback текст если изображение не загрузилось -->
+        <noscript>
+            <div class="logo-fallback">
+                <span class="logo-text">FONSALUS</span>
+                <span class="logo-subtitle">Maritime Telecom</span>
+            </div>
+        </noscript>
+    </a>
+</div>
+
+/* ============================================
    ОБНОВЛЕННЫЙ MOBILE DESIGN
    ============================================ */
 @media (max-width: 768px) {
